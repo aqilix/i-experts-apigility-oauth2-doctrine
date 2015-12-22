@@ -1,0 +1,36 @@
+{
+  "name" : "i-experts/apigility-oauth2-skeleton",
+  "description" : "Apigility Skeleton Using OAuth2",
+  "keywords" : [ "framework", "zf2", "api", "apigility", "oauth2" ],
+  "authors" : [ {
+    "name" : "Dolly Aswin",
+    "email" : "dolly.aswin@gmail.com"
+  } ],
+  "require" : {
+    "php" : ">=5.3.3",
+    "ext-intl" : "*",
+    "ext-gd"   : "*",
+    "zendframework/zendframework" : ">=2.3.2,<3.0.0",
+    "zfcampus/zf-apigility" : "1.0.3",
+    "zfcampus/zf-apigility-documentation" : "1.0.5",
+    "zfcampus/zf-apigility-doctrine"   : "1.0.2",
+    "api-skeletons/zf-oauth2-doctrine" : ">=1.0.1,<2.0.0",
+    "hounddog/doctrine-data-fixture-module": "0.0.4",
+    "bushbaby/zf-oauth2-doctrine-mutatetablenames" : "~0.2"
+  },
+  "require-dev" : {
+    "zendframework/zend-developer-tools" : "dev-master",
+    "zendframework/zftool"          : "dev-master",
+    "zfcampus/zf-apigility-admin"   : "1.1.2",
+    "zfcampus/zf-development-mode"  : "2.0.*",
+    "zfcampus/zf-apigility-welcome" : "dev-master",
+    "zfcampus/zf-deploy" : "~1.0",
+    "zend/zend-studio-development-mode" : "~1.0",
+    "squizlabs/php_codesniffer" : "1.4.*",
+    "zfr/zfr-cors" : "~1.0"
+  },
+  "license" : "BSD-3-Clause",
+  "config" : {
+    "process-timeout" : 5000
+  }
+}
