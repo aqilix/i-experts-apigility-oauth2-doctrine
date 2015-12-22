@@ -2,7 +2,7 @@
 /**
  * The user entity is always stored in another namespace than ZF\OAuth2
  */
-$userEntity = 'ZFTest\OAuth2\Doctrine\Entity\User';
+$userEntity = 'IExperts\User\Entity\User';
 
 return array(
     'zf-oauth2-doctrine' => array(
