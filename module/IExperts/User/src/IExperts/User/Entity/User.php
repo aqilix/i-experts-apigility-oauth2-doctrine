@@ -208,7 +208,8 @@ class User implements UserInterface
         return array(
             'id' => $this->getId(),
             'username' => $this->getUsername(),
-            'password' => $this->getPassword()
+            'password' => $this->getPassword(),
+            'email' => $this->getEmail()
         );
     }
 }

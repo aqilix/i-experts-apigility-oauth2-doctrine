@@ -10,8 +10,6 @@ namespace IExperts\User;
 use ZF\Apigility\Provider\ApigilityProviderInterface;
 use Zend\Uri\UriFactory;
 use Zend\Mvc\MvcEvent;
-use Zend\Mvc\ModuleRouteListener;
-use ZF\MvcAuth\MvcAuthEvent;
 
 /**
  * Module Class for user

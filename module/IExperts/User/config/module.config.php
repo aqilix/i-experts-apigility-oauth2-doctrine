@@ -19,31 +19,10 @@ return array(
         'aliases' => array(
         ),
     ),
-    'zf-versioning' => array(
-        'uri' => array(
+    'hydrators' => array(
+        'factories' => array(
+            'IExperts\User\Hydrator\User' => 'IExperts\User\Service\Factory\UserHydratorFactory',
         ),
-    ),
-    'zf-rest' => array(
-    ),
-    'zf-content-negotiation' => array(
-        'controllers' => array(
-        ),
-        'accept_whitelist' => array(
-        ),
-        'content_type_whitelist' => array(
-        ),
-    ),
-    'zf-hal' => array(
-        'metadata_map' => array(
-        ),
-    ),
-    'zf-content-validation' => array(
-    ),
-    'zf-mvc-auth' => array(
-        'authorization' => array(
-        ),
-    ),
-    'input_filter_specs' => array(
     ),
     'doctrine' => array(
         'driver' => array(
