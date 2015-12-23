@@ -197,4 +197,18 @@ class User implements UserInterface
     {
         $this->refreshToken = $refreshToken;
     }
+    
+    /**
+     * Get copy of properties in array
+     * 
+     * @return array
+     */
+    public function getArrayCopy()
+    {
+        return array(
+            'id' => $this->getId(),
+            'username' => $this->getUsername(),
+            'password' => $this->getPassword()
+        );
+    }
 }

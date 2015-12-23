@@ -78,7 +78,7 @@ return array(
                     'mapping' => array(
                         'user_id' => array(
                             'type' => 'field',
-                            'name' => 'ID',
+                            'name' => 'id',
                             'datatype' => 'integer',
                         ),
                         'username' => array(
@@ -126,7 +126,7 @@ return array(
                         'user_id' => array(
                             'type' => 'relation',
                             'name' => 'user',
-                            'entity_field_name' => 'ID',
+                            'entity_field_name' => 'id',
                             'entity' => $userEntity,
                             'datatype' => 'integer',
                             'allow_null' => true,
@@ -163,7 +163,7 @@ return array(
                         'user_id' => array(
                             'type' => 'relation',
                             'name' => 'user',
-                            'entity_field_name' => 'ID',
+                            'entity_field_name' => 'id',
                             'entity' => $userEntity,
                             'datatype' => 'integer',
                             'allow_null' => true,
@@ -200,7 +200,7 @@ return array(
                         'user_id' => array(
                             'type' => 'relation',
                             'name' => 'user',
-                            'entity_field_name' => 'ID',
+                            'entity_field_name' => 'id',
                             'entity' => $userEntity,
                             'datatype' => 'integer',
                             'allow_null' => true,
@@ -247,7 +247,7 @@ return array(
                         'user_id' => array(
                             'type' => 'relation',
                             'name' => 'user',
-                            'entity_field_name' => 'ID',
+                            'entity_field_name' => 'id',
                             'entity' => $userEntity,
                             'datatype' => 'integer',
                             'allow_null' => true,
