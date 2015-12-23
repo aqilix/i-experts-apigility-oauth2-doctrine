@@ -2,7 +2,9 @@
 
 namespace IExperts\User\Entity;
 
-class User
+use ZF\OAuth2\Doctrine\Entity\UserInterface;
+
+class User implements UserInterface
 {
     /**
      * @var int
@@ -130,5 +132,69 @@ class User
     {
         $this->password = $password;
         return $this;
+    }
+    
+    /**
+     * @return the $client
+     */
+    public function getClient()
+    {
+        return $this->client;
+    }
+
+    /**
+     * @param \IExperts\User\Entity\ZF\OAuth2\Doctrine\Entity\Client $client
+     */
+    public function setClient($client)
+    {
+        $this->client = $client;
+    }
+
+    /**
+     * @return the $accessToken
+     */
+    public function getAccessToken()
+    {
+        return $this->accessToken;
+    }
+
+    /**
+     * @param \IExperts\User\Entity\ZF\OAuth2\Doctrine\Entity\AccessToken $accessToken
+     */
+    public function setAccessToken($accessToken)
+    {
+        $this->accessToken = $accessToken;
+    }
+
+    /**
+     * @return the $authorizationCode
+     */
+    public function getAuthorizationCode()
+    {
+        return $this->authorizationCode;
+    }
+
+    /**
+     * @param \IExperts\User\Entity\ZF\OAuth2\Doctrine\Entity\AuthorizationCode $authorizationCode
+     */
+    public function setAuthorizationCode($authorizationCode)
+    {
+        $this->authorizationCode = $authorizationCode;
+    }
+
+    /**
+     * @return the $refreshToken
+     */
+    public function getRefreshToken()
+    {
+        return $this->refreshToken;
+    }
+
+    /**
+     * @param \IExperts\User\Entity\ZF\OAuth2\Doctrine\Entity\RefreshToken $refreshToken
+     */
+    public function setRefreshToken($refreshToken)
+    {
+        $this->refreshToken = $refreshToken;
     }
 }
