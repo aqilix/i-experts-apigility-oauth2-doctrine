@@ -14,6 +14,7 @@ return array(
         'invokables' => array(
         ),
         'factories' => array(
+            'iexperts.user.mapper.user' => 'IExperts\User\Mapper\UserMapperFactory'
         ),
         'aliases' => array(
         ),
