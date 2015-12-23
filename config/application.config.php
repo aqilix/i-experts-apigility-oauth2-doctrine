@@ -25,7 +25,8 @@ return array(
         'DoctrineORMModule',
         'DoctrineDataFixtureModule',
         'ZF\\OAuth2\\Doctrine',
-        'IExperts\\User'
+        'IExperts\\User',
+        'Api',
     ),
     'module_listener_options' => array(
         'module_paths' => array(
