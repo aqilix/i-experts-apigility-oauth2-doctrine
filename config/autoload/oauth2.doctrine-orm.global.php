@@ -25,7 +25,9 @@ return array(
                     'additional_mapping_data' => array(
                         'joinColumns' => array(
                             array(
-                                'onDelete' => 'CASCADE'
+                                'onDelete' => 'CASCADE',
+                                'name' => 'user_id',
+                                'referencedColumnName' => 'ID',
                             ),
                         ),
                     ),
@@ -36,7 +38,9 @@ return array(
                     'additional_mapping_data' => array(
                         'joinColumns' => array(
                             array(
-                                'onDelete' => 'CASCADE'
+                                'onDelete' => 'CASCADE',
+                                'name' => 'user_id',
+                                'referencedColumnName' => 'ID',
                             ),
                         ),
                     ),
@@ -47,7 +51,9 @@ return array(
                     'additional_mapping_data' => array(
                         'joinColumns' => array(
                             array(
-                                'onDelete' => 'CASCADE'
+                                'onDelete' => 'CASCADE',
+                                'name' => 'user_id',
+                                'referencedColumnName' => 'ID',
                             ),
                         ),
                     ),
@@ -58,7 +64,9 @@ return array(
                     'additional_mapping_data' => array(
                         'joinColumns' => array(
                             array(
-                                'onDelete' => 'CASCADE'
+                                'onDelete' => 'CASCADE',
+                                'name' => 'user_id',
+                                'referencedColumnName' => 'ID',
                             ),
                         ),
                     ),
@@ -70,7 +78,7 @@ return array(
                     'mapping' => array(
                         'user_id' => array(
                             'type' => 'field',
-                            'name' => 'id',
+                            'name' => 'ID',
                             'datatype' => 'integer',
                         ),
                         'username' => array(
@@ -118,7 +126,7 @@ return array(
                         'user_id' => array(
                             'type' => 'relation',
                             'name' => 'user',
-                            'entity_field_name' => 'id',
+                            'entity_field_name' => 'ID',
                             'entity' => $userEntity,
                             'datatype' => 'integer',
                             'allow_null' => true,
@@ -155,7 +163,7 @@ return array(
                         'user_id' => array(
                             'type' => 'relation',
                             'name' => 'user',
-                            'entity_field_name' => 'id',
+                            'entity_field_name' => 'ID',
                             'entity' => $userEntity,
                             'datatype' => 'integer',
                             'allow_null' => true,
@@ -192,7 +200,7 @@ return array(
                         'user_id' => array(
                             'type' => 'relation',
                             'name' => 'user',
-                            'entity_field_name' => 'id',
+                            'entity_field_name' => 'ID',
                             'entity' => $userEntity,
                             'datatype' => 'integer',
                             'allow_null' => true,
@@ -239,7 +247,7 @@ return array(
                         'user_id' => array(
                             'type' => 'relation',
                             'name' => 'user',
-                            'entity_field_name' => 'id',
+                            'entity_field_name' => 'ID',
                             'entity' => $userEntity,
                             'datatype' => 'integer',
                             'allow_null' => true,
