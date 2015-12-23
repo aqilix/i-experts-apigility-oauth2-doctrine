@@ -63,4 +63,19 @@ return array(
             ),
         ),
     ),
+    'zf-hal' => array(
+        'metadata_map' => array(
+            'IExperts\User\Entity\User' => array(
+                'entity_identifier_name' => 'id',
+                'route_name' => 'api.rpc.me',
+                'route_identifier_name' => 'user_id',
+                'hydrator' => 'IExperts\User\Hydrator\User',
+            ),
+         )
+    ),
+    'zf-content-negotiation' => array(
+        'controllers' => array(
+            'Api\\V1\\Rpc\\Me\\Controller' => 'HalJson',
+        ),
+    ),
 );
